@@ -1,4 +1,5 @@
 import serial
+import serial.tools.list_ports
 
 class RP7972A():
     """Esta clase pide y mide los datos de la fuente, para luego ser procesados"""
@@ -11,25 +12,41 @@ class RP7972A():
 
         # FOR INITIALIZATION OF POWER SOURCE (RP7972A)
         #open serial port
-        COM_PORT = "COM"+ input("Escribir # del puerto COM de RP7972A: ") # Instrument port location
+        myports = [tuple(p) for p in list(serial.tools.list_ports.comports())]
+        print("Available ports: ")
+        print(myports)
+        COM_PORT = "COM"+ input("Enter the COM port #: ") # Instrument port location
+
         TIMEOUT = 1
         self.USB_scpi = serial.Serial()
-        self.USB_scpi.port=COM_PORT
         self.USB_scpi.timeout = TIMEOUT
-        try:
-            self.USB_scpi.open()
-        except:
-            print("couldn't open the port")
+
+        while not self.USB_scpi.is_open:
+            try:
+                self.USB_scpi.port=COM_PORT
+                print("opening at port: " + COM_PORT + " ...")
+                print("...")
+                self.USB_scpi.open()
+            except:
+                print("Couldn't open the port")
+                myports = [tuple(p) for p in list(serial.tools.list_ports.comports())]
+                print("Available ports: ")
+                print(myports)
+                COM_PORT = "COM"+ input("Enter new COM port #: ") # Instrument port location
+        
         
     
     def scpi_out(self, command):
         """Outputs an encoded scpi string on serial port"""
         while not self.USB_scpi.is_open:
             self.USB_scpi.close() #idk if this is needed for redundancy
-            print("!!!Serial not open!!!")
+            print("Can't send data, the port is closed")
             COM_PORT="COM" + input("enter new COM port: ")
             self.USB_scpi.port= COM_PORT
-            self.USB_scpi.open()
+            try:
+                self.USB_scpi.open()
+            except:
+                pass
  
         self.USB_scpi.write(str(command).encode())  # Send command
 
@@ -37,7 +54,7 @@ prueba = RP7972A()
 CHECK_COMMAND = "*IDN?\n"  # Terminate with newline
 prueba.scpi_out(CHECK_COMMAND)
 response = prueba.USB_scpi.readline().decode()
-print("Conectado a: " + response)
+print("Connected to: " + response)
 
 #prueba.scpi_out("Escribe el comando aqui")
 prueba.USB_scpi.close()
