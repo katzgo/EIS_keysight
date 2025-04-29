@@ -1,0 +1,2278 @@
+<?xml version="1.0"?>
+<TraceSessionDump>
+    <TraceApp>IOMonitor</TraceApp>
+    <Date>Monday, April 28, 2025</Date>
+    <TraceList>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5756039285900" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5756039285900" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="1329400">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5756041623600" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2ACED098" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5756041623600" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="416100">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5757053940400" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5757053940400" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="331300">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5757055157900" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2ACED770" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5757055157900" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="433600">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5758062509600" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5758062509600" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="169600">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5758063307600" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2ACEDE48" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5758063307600" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="291600">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5759067551800" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5759067551800" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="265600">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5759068360300" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2ACEE520" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5759068360300" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="455900">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5760071680800" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5760071680800" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="159100">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5760072335500" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2ACF0E98" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5760072335500" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="258400">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5761077831200" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5761077831200" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="291500">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5761078755700" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2ACF1570" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5761078755700" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="782000">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5762084549100" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5762084549100" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="295600">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5762085447400" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2ACF1C48" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5762085447400" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="436400">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5763093970300" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5763093970300" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="281400">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5763094852800" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2ACF2320" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5763094852800" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="733400">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5764102480700" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5764102480700" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="278200">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5764103420800" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2ACF29F8" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5764103420800" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="391300">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5765110884200" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5765110884200" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="265100">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5765111781200" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2ACF30E8" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5765111781200" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="395500">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5766119056300" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5766119056300" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="290700">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5766119946800" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2ACF37C0" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5766119946800" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="409800">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5767126265400" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5767126265400" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="283500">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5767127142900" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2ACF3E98" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5767127142900" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="469200">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5768133805600" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5768133805600" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="315600">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5768134737500" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2ACF4570" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5768134737500" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="355800">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5769140529600" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5769140529600" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="275200">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5769141379500" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2ACF8F18" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5769141379500" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="378600">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5770150610200" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5770150610200" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="270800">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5770151446500" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2ACF95F0" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5770151446500" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="399300">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5771158752200" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5771158752200" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="300300">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5771161790800" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2ACF9CC8" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5771161790800" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="441400">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5772171179100" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5772171179100" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="285800">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5772172042400" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2ACFA3A0" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5772172042400" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="387700">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5773175114500" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5773175114500" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="292600">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5773175987100" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2ACFAA78" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5773175987100" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="389000">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viOpenDefaultRM" UtcTime="0" Timestamp="5773638311200" AppName="python.exe" ThreadID="8180" ProcessID="5428" Address="" ParamCount="2">
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x00000274C3A97C98" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5773638311200" AppName="" ThreadID="8180" ProcessID="5428" Address="defaultRM" ParamCount="2" HRESULT="0" ElapsedNS="22974600">
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viFindRsrc" UtcTime="0" Timestamp="5773661599300" AppName="python.exe" ThreadID="8180" ProcessID="5428" Address="" ParamCount="6">
+            <Parameter Name="expr" RetVal="False" InParam="True" OutParam="False" ParamType="array_int8">
+                <Element BinHexValue="3f2a3a3a494e535452" />
+            </Parameter>
+            <Parameter Name="findList" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x00000274C3A97E98" />
+            </Parameter>
+            <Parameter Name="instrDesc" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x00000274C3A05430" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x00000274C3A97F18" />
+            </Parameter>
+            <Parameter Name="sesn" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5773661599300" AppName="" ThreadID="8180" ProcessID="5428" Address="defaultRM" ParamCount="4" HRESULT="0" ElapsedNS="19299300">
+            <Parameter Name="findList" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="1025" />
+            </Parameter>
+            <Parameter Name="instrDesc" RetVal="False" InParam="False" OutParam="True" ParamType="array_int8">
+                <Element BinHexValue="555342303a3a3078324138443a3a3078334230323a3a4d5936303030303633383a3a303a3a494e535452" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="2" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viFindNext" UtcTime="0" Timestamp="5773681139700" AppName="python.exe" ThreadID="8180" ProcessID="5428" Address="findRsrc" ParamCount="3">
+            <Parameter Name="findList" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1025" />
+            </Parameter>
+            <Parameter Name="instrDesc" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x00000274C3A05430" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5773681139700" AppName="" ThreadID="8180" ProcessID="5428" Address="findRsrc" ParamCount="2" HRESULT="0" ElapsedNS="110300">
+            <Parameter Name="instrDesc" RetVal="False" InParam="False" OutParam="True" ParamType="array_int8">
+                <Element BinHexValue="555342303a3a3078324138443a3a3078354330323a3a4d5936323130313439313a3a303a3a494e535452" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viClose" UtcTime="0" Timestamp="5773681409200" AppName="python.exe" ThreadID="8180" ProcessID="5428" Address="findRsrc" ParamCount="2">
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1025" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5773681409200" AppName="" ThreadID="8180" ProcessID="5428" Address="findRsrc" ParamCount="1" HRESULT="0" ElapsedNS="110000">
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viParseRsrcEx" UtcTime="0" Timestamp="5773684225200" AppName="python.exe" ThreadID="8180" ProcessID="5428" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="8">
+            <Parameter Name="aliasName" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x00000274C3A06230" />
+            </Parameter>
+            <Parameter Name="intfNum" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x00000274C3ACC198" />
+            </Parameter>
+            <Parameter Name="intfType" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x00000274C3A97E98" />
+            </Parameter>
+            <Parameter Name="rsrcClass" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x00000274C3A05430" />
+            </Parameter>
+            <Parameter Name="rsrcName" RetVal="False" InParam="True" OutParam="False" ParamType="array_int8">
+                <Element BinHexValue="555342303a3a3078324138443a3a3078334230323a3a4d5936303030303633383a3a303a3a494e535452" />
+            </Parameter>
+            <Parameter Name="rsrcString" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x00000274C3A05C30" />
+            </Parameter>
+            <Parameter Name="sesn" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5773684225200" AppName="" ThreadID="8180" ProcessID="5428" Address="defaultRM" ParamCount="6" HRESULT="0" ElapsedNS="1000400">
+            <Parameter Name="aliasName" RetVal="False" InParam="False" OutParam="True" ParamType="array_int8">
+                <Element BinHexValue="555342496e737472756d656e7431" />
+            </Parameter>
+            <Parameter Name="intfNum" RetVal="False" InParam="False" OutParam="True" ParamType="uint16">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="intfType" RetVal="False" InParam="False" OutParam="True" ParamType="uint16">
+                <Element Value="7" />
+            </Parameter>
+            <Parameter Name="rsrcClass" RetVal="False" InParam="False" OutParam="True" ParamType="array_int8">
+                <Element BinHexValue="494e535452" />
+            </Parameter>
+            <Parameter Name="rsrcString" RetVal="False" InParam="False" OutParam="True" ParamType="array_int8">
+                <Element BinHexValue="555342303a3a3078324138443a3a3078334230323a3a4d5936303030303633383a3a303a3a494e535452" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viOpen" UtcTime="0" Timestamp="5773685609000" AppName="python.exe" ThreadID="8180" ProcessID="5428" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="6">
+            <Parameter Name="accessMode" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="rsrcName" RetVal="False" InParam="True" OutParam="False" ParamType="array_int8">
+                <Element BinHexValue="555342303a3a3078324138443a3a3078334230323a3a4d5936303030303633383a3a303a3a494e535452" />
+            </Parameter>
+            <Parameter Name="sesn" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="timeout" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x00000274C3ACC318" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5773685609000" AppName="" ThreadID="8180" ProcessID="5428" Address="defaultRM" ParamCount="2" HRESULT="0" ElapsedNS="93966400">
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viParseRsrcEx" UtcTime="0" Timestamp="5773779722700" AppName="python.exe" ThreadID="8180" ProcessID="5428" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="8">
+            <Parameter Name="aliasName" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000000000000000" />
+            </Parameter>
+            <Parameter Name="intfNum" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000000C4442DE794" />
+            </Parameter>
+            <Parameter Name="intfType" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000000C4442DE798" />
+            </Parameter>
+            <Parameter Name="rsrcClass" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000000C4442DE800" />
+            </Parameter>
+            <Parameter Name="rsrcName" RetVal="False" InParam="True" OutParam="False" ParamType="array_int8">
+                <Element BinHexValue="555342303a3a3078324138443a3a3078334230323a3a4d5936303030303633383a3a303a3a494e535452" />
+            </Parameter>
+            <Parameter Name="rsrcString" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000000000000000" />
+            </Parameter>
+            <Parameter Name="sesn" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5773779722700" AppName="" ThreadID="8180" ProcessID="5428" Address="defaultRM" ParamCount="6" HRESULT="0" ElapsedNS="781100">
+            <Parameter Name="aliasName" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000000000000000" />
+            </Parameter>
+            <Parameter Name="intfNum" RetVal="False" InParam="False" OutParam="True" ParamType="uint16">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="intfType" RetVal="False" InParam="False" OutParam="True" ParamType="uint16">
+                <Element Value="7" />
+            </Parameter>
+            <Parameter Name="rsrcClass" RetVal="False" InParam="False" OutParam="True" ParamType="array_int8">
+                <Element BinHexValue="494e535452" />
+            </Parameter>
+            <Parameter Name="rsrcString" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000000000000000" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5773785125000" AppName="python.exe" ThreadID="8180" ProcessID="5428" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="2a49444e3f0d0a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="7" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x00000274C3ACC318" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5773785125000" AppName="" ThreadID="8180" ProcessID="5428" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="9610700">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="7" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5773795619900" AppName="python.exe" ThreadID="8180" ProcessID="5428" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x00000274C3206980" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="20480" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x00000274C3ACC418" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5773795619900" AppName="" ThreadID="8180" ProcessID="5428" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="323500">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="4b6579736967687420546563686e6f6c6f676965732c525037393732412c4d5936303030303633382c422e30362e30352e313034390a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="54" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5773798148600" AppName="python.exe" ThreadID="8180" ProcessID="5428" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="435552523a4d4f4445204152420a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="14" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x00000274C3ACC418" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5773798148600" AppName="" ThreadID="8180" ProcessID="5428" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="197600">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="14" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5773798954900" AppName="python.exe" ThreadID="8180" ProcessID="5428" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="4152423a46554e433a5459504520435552520a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="19" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x00000274C3ACC418" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5773798954900" AppName="" ThreadID="8180" ProcessID="5428" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="176600">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="19" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5773799641400" AppName="python.exe" ThreadID="8180" ProcessID="5428" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="4152423a435552523a4344573a4457454c2032652d30350a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="24" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x00000274C3ACC418" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5773799641400" AppName="" ThreadID="8180" ProcessID="5428" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="177400">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="24" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5773800358100" AppName="python.exe" ThreadID="8180" ProcessID="5428" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="4152423a43555252656e743a434457656c6c302e3030303030302c302e3132373837372c302e3235333635352c302e3337353236372c302e3439303731382c302e3539383131312c302e3639353638332c302e3738313833312c302e3835353134332c302e3931343431332c302e3935383636382c302e3938373138322c302e3939393438362c302e3939353337392c302e3937343932382c302e3933383436382c302e3838363539392c302e3832303137322c302e3734303237382c302e3634383232382c302e3534353533352c302e3433333838342c302e3331353130382c302e3139313135392c302e3036343037302c2d302e3036343037302c2d302e" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="493" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x00000274C3ACC418" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5773800358100" AppName="" ThreadID="8180" ProcessID="5428" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="203400">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="493" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5773801055500" AppName="python.exe" ThreadID="8180" ProcessID="5428" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="4152423a434f554e20340a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="11" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x00000274C3ACC418" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5773801055500" AppName="" ThreadID="8180" ProcessID="5428" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="167600">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="11" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5773801707200" AppName="python.exe" ThreadID="8180" ProcessID="5428" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="4152423a454e443a4c415354204f46460a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="17" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x00000274C3ACC418" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5773801707200" AppName="" ThreadID="8180" ProcessID="5428" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="176900">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="17" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viDisableEvent" UtcTime="0" Timestamp="5773802075900" AppName="python.exe" ThreadID="8180" ProcessID="5428" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="4">
+            <Parameter Name="eventType" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1073709055" />
+            </Parameter>
+            <Parameter Name="mechanism" RetVal="False" InParam="True" OutParam="False" ParamType="uint16">
+                <Element Value="65535" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5773802075900" AppName="" ThreadID="8180" ProcessID="5428" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="1" HRESULT="0" ElapsedNS="98300">
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viDiscardEvents" UtcTime="0" Timestamp="5773802279100" AppName="python.exe" ThreadID="8180" ProcessID="5428" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="4">
+            <Parameter Name="eventType" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1073709055" />
+            </Parameter>
+            <Parameter Name="mechanism" RetVal="False" InParam="True" OutParam="False" ParamType="uint16">
+                <Element Value="65535" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5773802279100" AppName="" ThreadID="8180" ProcessID="5428" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="1" HRESULT="1073676292" ElapsedNS="174100">
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="1073676292" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viClose" UtcTime="0" Timestamp="5773802562300" AppName="python.exe" ThreadID="8180" ProcessID="5428" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2">
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5773802562300" AppName="" ThreadID="8180" ProcessID="5428" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="1" HRESULT="0" ElapsedNS="2397600">
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viClose" UtcTime="0" Timestamp="5773805181200" AppName="python.exe" ThreadID="8180" ProcessID="5428" Address="defaultRM" ParamCount="2">
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5773805181200" AppName="" ThreadID="8180" ProcessID="5428" Address="defaultRM" ParamCount="1" HRESULT="0" ElapsedNS="2906600">
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5774180939500" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5774180939500" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="271200">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5774181815600" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2ACFD198" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5774181815600" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="392500">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5775183570600" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5775183570600" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="278400">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5775184455600" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2ACFD870" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5775184455600" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="385500">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5776192678100" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5776192678100" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="288300">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5776193571000" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2ACFDF48" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5776193571000" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="385700">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5777200608000" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5777200608000" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="281600">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5777201500600" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2ACFE620" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5777201500600" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="409200">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5778211567500" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5778211567500" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="262100">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5778212490100" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2AD04FD8" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5778212490100" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="411000">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5779219907800" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5779219907800" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="280200">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5779220787300" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2AD056B0" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5779220787300" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="374900">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5780230250400" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5780230250400" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="282300">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5780231128900" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2AD05D88" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5780231128900" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="413500">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5781237317700" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5781237317700" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="285100">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5781238285600" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2AD06460" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5781238285600" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="398500">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5782244846300" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5782244846300" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="299100">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5782245762200" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2AD06B38" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5782245762200" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="364600">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5783251910700" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5783251910700" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="267800">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5783252796200" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2AD0B278" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5783252796200" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="399500">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5784257708400" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5784257708400" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="281600">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5784258659200" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2AD0B950" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5784258659200" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="415700">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5785264604100" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5785264604100" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="277200">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5785265491600" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2AD0C028" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5785265491600" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="873300">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5786271917000" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5786271917000" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="233600">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5786272698300" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2AD0C700" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5786272698300" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="281400">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5787289186200" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5787289186200" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="279400">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5787290086400" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2AD11098" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5787290086400" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="408100">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5788298259500" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5788298259500" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="267400">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5788299134200" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2AD11770" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2B8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5788299134200" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="341800">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viWrite" UtcTime="0" Timestamp="5789308727900" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="True" OutParam="False" ParamType="array_uint8">
+                <Element BinHexValue="535441543a4f5045523a434f4e443f20284031290a" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2C0" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5789308727900" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="2" HRESULT="0" ElapsedNS="274500">
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="21" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+        <Method_Enter TraceSource="Agilent VISA" MethodName="VISA::viRead" UtcTime="0" Timestamp="5789309610800" AppName="Keysight.PathWave.AdvancedPowerApplicationSuite.exe" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="5">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x000001FA2AD11E48" />
+            </Parameter>
+            <Parameter Name="cnt" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1024" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="pointer">
+                <Element Value="0x0000005D5E0FF2C8" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+            <Parameter Name="vi" RetVal="False" InParam="True" OutParam="False" ParamType="uint32">
+                <Element Value="1" />
+            </Parameter>
+        </Method_Enter>
+        <Method_Exit TraceSource="Agilent VISA" MethodName="VISA" Timestamp="5789309610800" AppName="" ThreadID="18108" ProcessID="5308" Address="USB0::0x2A8D::0x3B02::MY60000638::0::INSTR" ParamCount="3" HRESULT="0" ElapsedNS="964200">
+            <Parameter Name="buf" RetVal="False" InParam="False" OutParam="True" ParamType="array_uint8">
+                <Element BinHexValue="2b340a" />
+            </Parameter>
+            <Parameter Name="retCnt" RetVal="False" InParam="False" OutParam="True" ParamType="uint32">
+                <Element Value="3" />
+            </Parameter>
+            <Parameter Name="status" RetVal="True" InParam="False" OutParam="True" ParamType="int32">
+                <Element Value="0" />
+            </Parameter>
+        </Method_Exit>
+    </TraceList>
+</TraceSessionDump>
