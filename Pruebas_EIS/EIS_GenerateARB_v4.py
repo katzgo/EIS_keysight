@@ -93,12 +93,12 @@ class RP7972A():
         # TODO finish this method
     def scpi_points_out(self, values):
         """Outputs the command to set the ARB points and the points as scpi values"""
-        self.rp_USB.write_ascii_values('ARB:CURRent:CDWell', values, "f",",","\n")
+        self.rp_USB.write_ascii_values('ARB:CURR:CDW', values, "f",",","\n")
     def stop(self):
-        self.rp_USB.write("ABORt:TRANsient","\n")
+        self.rp_USB.write("ABOR:TRAN","\n")
         self.rp_USB.write("OUTP OFF","\n")
-        self.rp_USB.write("ABORt:ACQuire","\n")
-        self.rp_USB.write("ABORt:ELOG","\n")
+        self.rp_USB.write("ABOR:ACQ","\n")
+        self.rp_USB.write("ABOR:ELOG","\n")
 
 # Edit the following values of the current signal you wish to generate
 amplitude = 1
@@ -107,8 +107,22 @@ frequency = 1000
 # Calling the class of the instrument
 inst = RP7972A(amplitude)
 #inst.generate_arb(frequency)
-messages = ["ABOR:TRAN (@1)","ARB:FUNC:TYPE VOLT,(@1)", "ARB:FUNC:SHAP CDW,(@1)","ARB:COUN INF,(@1)","ARB:TERM:LAST 1,(@1)","CURR:MODE FIX,(@1)","VOLT:MODE ARB,(@1)","TRIG:ARB:SOUR Bus", "ARB:VOLT:CDW:DWELL 2.048005E-5,(@1)"]
+inst.stop()
+messages = ["ABOR:TRAN (@1)",
+            "ARB:FUNC:TYPE CURR,(@1)",
+            "ARB:FUNC:SHAP CDW,(@1)",
+            "ARB:COUN INF,(@1)",
+            "ARB:TERM:LAST 1,(@1)",
+            "CURR:MODE ARB,(@1)",
+            "TRIG:ARB:SOUR Bus",
+            "ARB:CURR:CDW:DWELL 2.048005E-3,(@1)"]
 for mess in messages:
     inst.scpi_out(mess)
-inst.scpi_out("ARB:VOLT:CDW 1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3,3") 
+
+inst.scpi_out("ARB:CURR:CDW 0.1, 0.1, 0.1, 0.1, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4")
+inst.scpi_out("OUTP 1,(@1)")
+inst.scpi_out("INIT:TRAN (@1)")
+inst.scpi_out("TRIG:TRAN (@1)")
 # Measurements should be made in Keysight's software
+
+

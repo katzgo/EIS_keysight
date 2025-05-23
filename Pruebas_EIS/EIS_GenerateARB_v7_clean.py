@@ -3,9 +3,10 @@ import pyvisa
 
 class RP7972A():
     """Esta clase pide y mide los datos de la fuente, para luego ser procesados"""
-    def __init__(self, curr_amplitude, rp_USB=None):
+    def __init__(self, curr_amplitude, voltage_limit, rp_USB=None):
         """Define variables de entrada como variables globales en la clase"""
         self.curr_amplitude = curr_amplitude
+        self.voltage_limit = voltage_limit
 
         self.rp_USB=rp_USB
         # FOR INITIALIZATION OF POWER SOURCE (RP7972A)
@@ -35,27 +36,45 @@ class RP7972A():
         """INFO: service manual, cap 4, Programming an Arbitrary Waveform"""
         arb_cycles, arb_points_per_cycle = self.cycles_per_frequency(frequency)
         arb_points, dwell_time = self.arb_data(frequency, arb_points_per_cycle)
-        # Enable arb function
-        arb_enable = "CURR:MODE ARB"
-        self.scpi_out(arb_enable)
-        # Specify arb type
-        arb_type = "ARB:FUNC:TYPE CURR"
-        self.scpi_out(arb_type)
-        # Specify dwell time
-        arb_dwell = "ARB:CURR:CDW:DWEL " + str(dwell_time)
-        self.scpi_out(arb_dwell)
-        # Program arb points
-        self.scpi_points_out(arb_points) # with scpi out points function not scipi out
-        # Speecify the arb to repeat
-        if arb_cycles > 1:
-            arb_repeat = "ARB:COUN " + str(arb_cycles)
-            self.scpi_out(arb_repeat)
-        # Specify the last output
-        arb_end = "ARB:END:LAST OFF"
-        self.scpi_out(arb_end)
-
+        ms = {}
+        # Set output priority mode to current
+        ms['priority_mode'] = "FUNC CURR, (@1)"
+        # Set voltage limit (necessary for output priority mode)
+        ms['voltage_limit'] = "VOLT:LIM " + str(self.voltage_limit) + "(@1)"
+        # Cancel any transients or arbs
+        ms['abort_transient_1'] = "ABOR:TRAN (@1)"
+        # Set arbitrary function type to current
+        ms['arb_func_type'] = "ARB:FUNC:TYPE CURR,(@1)"
+        # Set arbitrary function shape to CDW
+        ms['arb_func_shape'] = "ARB:FUNC:SHAP CDW,(@1)"
+        # Set the arb to repeat an infinite amount of times
+        arb_cycles = "INF"
+        ms['arb_count'] = "ARB:COUN " + str(arb_cycles) + ", (@1)"
+        # Set the last current setting when the arb ends to 1A
+        ms['arb_term_last'] = "ARB:TERM:LAST 1,(@1)"
+        # Set the mode of the current to be an Arbitrary signal
+        ms['curr_mode'] = "CURR:MODE ARB,(@1)"
+        # Set the source of the arbitrary trigger to Bus
+        ms['trig_arb_source'] = "TRIG:ARB:SOUR Bus"
+        # Set the dwell time for the signal (associated with the frequency)
+        ms['arb_curr_cdw_dwell'] = "ARB:CURR:CDW:DWELL " + str(dwell_time) + ", (@1)"
+        # Set slew rate setting (for testing)
+        ms['curr_slew'] = "CURR:SLEW INF"
+        # Prepares to send out the current points
+        ms['current_points'] = (arb_points*self.curr_amplitude)+self.curr_amplitude
+        # Initiates the output
+        ms["output_init"] = "OUTP 1,(@1)"
+        # Initiates the transient  
+        ms["init_tran"] = "INIT:TRAN (@1)"
+        # Triggers the transient   
+        ms["trig_tran"] = "TRIG:TRAN (@1)"
+        for message in ms:
+            if message != "current_points":
+                self.scpi_out = ms[message]
+            else:
+                self.scpi_points_out(ms[message])
     #TOOLBOX    
-    def cycles_per_frequency(self, freq):
+    def cycles_per_frequency( freq):
         """Switch para definir ciclos por frecuencia, recibe una frequencia saca cantidad de ciclos"""
         if freq <= 2000:
             cycles = 4
@@ -89,26 +108,50 @@ class RP7972A():
         # Serán 1000 puntos por ciclo máximo, si hay problemas lo reduciremos (dato random)
     def scpi_out(self, command):
         """Outputs an encoded scpi string on serial port"""
-        self.rp_USB.write(command,"\n")
+        try:
+            self.rp_USB.write(command,"\n")
+        except:
+            print("could not send" + str(command))
         # TODO finish this method
     def scpi_points_out(self, values):
         """Outputs the command to set the ARB points and the points as scpi values"""
-        self.rp_USB.write_ascii_values('ARB:CURRent:CDWell', values, "f",",","\n")
+        self.rp_USB.write_ascii_values('ARB:CURR:CDW ', values, "f",",","\n")
     def stop(self):
         self.rp_USB.write("ABORt:TRANsient","\n")
         self.rp_USB.write("OUTP OFF","\n")
         self.rp_USB.write("ABORt:ACQuire","\n")
         self.rp_USB.write("ABORt:ELOG","\n")
 
-# Edit the following values of the current signal you wish to generate
-amplitude = 1
-frequency = 1000
+# =======================================================================================================
+#LOAD DEFINITION
+#DUT = input("Input the DUT's characteristics: Resistive Load(R), Battery(B)")
+DUT = "R"
+if DUT == "R":
+    r = 1000 #Enter load's resistance in Ohms
+    power_capacity = 0.5 #Enter load's power capacity in Watts
+    amplitude = np.sqrt(power_capacity/r)/2
+    voltage_limit = r*amplitude*2 + 1
+else:
+    amplitude = 0.1 # If not a resistive load, enter the amplitude of the current to apply to the DUT
 
+
+# =======================================================================================================
+#SIGNAL DEFINITION
+# Edit the following values of the current signal you wish to generate
+frequency = 100
+
+
+# =======================================================================================================
+#CLASS CALLING
 # Calling the class of the instrument
-inst = RP7972A(amplitude)
-#inst.generate_arb(frequency)
-messages = ["ABOR:TRAN (@1)","ARB:FUNC:TYPE VOLT,(@1)", "ARB:FUNC:SHAP CDW,(@1)","ARB:COUN INF,(@1)","ARB:TERM:LAST 1,(@1)","CURR:MODE FIX,(@1)","VOLT:MODE ARB,(@1)","TRIG:ARB:SOUR Bus", "ARB:VOLT:CDW:DWELL 2.048005E-5,(@1)"]
-for mess in messages:
-    inst.scpi_out(mess)
-inst.scpi_out("ARB:VOLT:CDW 1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3,3") 
-# Measurements should be made in Keysight's software
+inst = RP7972A(amplitude, voltage_limit)
+
+inst.generate_arb(frequency)
+
+# =======================================================================================================
+#STOP GENERATING
+input("Enter to stop generating the signal")
+inst.stop()
+
+
+# Measurements should be made with an Oscilloscope for Testing

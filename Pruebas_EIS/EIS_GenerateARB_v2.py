@@ -55,6 +55,9 @@ class RP7972A():
         self.scpi_out(arb_end)
 
     #TOOLBOX    
+    def measure_voltage(self):
+        """Query the device for voltage points using the MEASure:ARRay:VOLTage[:DC]? command"""
+        points = self.rp_USB.query("MEASure:ARRay:VOLTage[:DC]?")
     def cycles_per_frequency(self, freq):
         """Switch para definir ciclos por frecuencia, recibe una frequencia saca cantidad de ciclos"""
         if freq <= 2000:
@@ -103,12 +106,9 @@ class RP7972A():
 # Edit the following values of the current signal you wish to generate
 amplitude = 1
 frequency = 1000
-
-# Calling the class of the instrument
-inst = RP7972A(amplitude)
-#inst.generate_arb(frequency)
-messages = ["ABOR:TRAN (@1)","ARB:FUNC:TYPE VOLT,(@1)", "ARB:FUNC:SHAP CDW,(@1)","ARB:COUN INF,(@1)","ARB:TERM:LAST 1,(@1)","CURR:MODE FIX,(@1)","VOLT:MODE ARB,(@1)","TRIG:ARB:SOUR Bus", "ARB:VOLT:CDW:DWELL 2.048005E-5,(@1)"]
-for mess in messages:
-    inst.scpi_out(mess)
-inst.scpi_out("ARB:VOLT:CDW 1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3,3") 
-# Measurements should be made in Keysight's software
+inst=RP7972A(amplitude)
+inst.scpi_out("SENS:SWE:TINT 2")
+inst.scpi_out("SENS:SWE:POIN 200")
+inst.scpi_out("INITiate[:IMMediate]:ACQuire")
+inst.scpi_out("MEASure:ARRay:VOLTage[:DC]?")
+inst.rp_USB.query("MEAS:VOLT?")
