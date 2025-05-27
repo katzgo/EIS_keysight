@@ -14,23 +14,41 @@ class RP7972A():
         devices = rm.list_resources()
 
         print("Searching for devices...")
-        for device in devices:
-            try:
-                my_instrument = rm.open_resource(str(device))
-                device_ID=my_instrument.query('*IDN?')
-                if  "RP797" in device_ID:#if the RP7972 is found assign it to rp_USB
-                    self.rp_USB=my_instrument
-                    print("Found and connected to: "+device_ID)
-                    break
-                else:#close other devices
-                    my_instrument.close()
-            except:
-                print("no devices were found")
-                
-        if not self.rp_USB:
+        if devices:
+            for device in devices:
+                try:
+                    my_instrument = rm.open_resource(str(device))
+                    device_ID=my_instrument.query('*IDN?')
+                    if  "RP797" in device_ID:#if the RP7972 is found assign it to rp_USB
+                        self.rp_USB=my_instrument
+                        print("Found and connected to: "+device_ID)
+                        break
+                    else:#close other devices
+                        my_instrument.close()
+                except:
+                    print("Error: No response from found device")
+            if not self.rp_USB:
                 print("No RP7972 power supply was found.")
                 rm.close()
-
+        else:
+            print("No devices were found")
+                
+    def measure_voltage(self, measure_time, measure_points):
+        """Query the device for voltage points using the MEASure:ARRay:VOLTage[:DC]? command"""
+        try:
+            self.scpi_out(" SENS:SWE:TINT " + str(measure_time) )
+            self.scpi_out(" SENS:SWE:POIN " + str(measure_points))
+            self.scpi_out("TRIG:ACQ:SOUR TRAN")
+            self.scpi_out("INIT:ACQ")
+            time.sleep(0.1) #it would be best to query the statur of the ACQ system
+            self.scpi_out(" TRIG:ACQ")
+            time.sleep(measure_time*measure_points +0.2) #it would be best to query the active measurment status to fetch measurement after it is done
+            points = self.rp_USB.query("FETC:ARR:VOLT?")
+            return points
+        except:
+            print("ERROR: no data was recieved")
+        #TODO deal with the points returned, separate them and save them in an array that can be accessed by the EIS class
+        
     def generate_arb(self, frequency):
         """Para generar las señales de corriente que se envian a la fuente, se tiene que llamar por cada frecuencia, no es sweep"""
         """INFO: service manual, cap 4, Programming an Arbitrary Waveform"""
@@ -113,6 +131,11 @@ class RP7972A():
         except:
             print("could not send" + str(command))
         # TODO finish this method
+    def scpi_query(self, query):
+        try:
+            self.rp_USB.query(str(query))
+        except:
+            print("could not send query: " + str(query))
     def scpi_points_out(self, values):
         """Outputs the command to set the ARB points and the points as scpi values"""
         try:
@@ -133,8 +156,8 @@ class RP7972A():
 #DUT = input("Input the DUT's characteristics: Resistive Load(R), Battery(B)")
 DUT = "R"
 if DUT == "R":
-    r = 1000 #Enter load's resistance in Ohms
-    power_capacity = 0.5 #Enter load's power capacity in Watts
+    r = 33 #Enter load's resistance in Ohms
+    power_capacity = 2 #Enter load's power capacity in Watts
     amplitude = np.sqrt(power_capacity/r)/2
     voltage_limit = r*amplitude*2 + 1
 else:
@@ -155,9 +178,13 @@ inst = RP7972A(amplitude, voltage_limit)
 inst.generate_arb(frequency)
 
 # =======================================================================================================
+#MEASURE OUTPUT VOLTAGE
+time_interval=1/(frequency*10)
+point_number=1000
+inst.measure_voltage(time_interval,point_number)
+# =======================================================================================================
 #STOP GENERATING
-input("Enter to stop generating the signal")
+
 inst.stop()
 
 
-# Measurements should be made with an Oscilloscope for Testing
