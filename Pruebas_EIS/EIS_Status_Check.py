@@ -63,7 +63,8 @@ class RP7972A():
             print("could not send array")
     def scpi_query(self, query):
         try:
-            self.rp_USB.query(str(query))
+            response=self.rp_USB.query(str(query))
+            return response
         except:
             print("could not send query: " + str(query))
     def stop(self):
@@ -108,8 +109,5 @@ class RP7972A():
 
          
 instrument=RP7972A()
-point=instrument.measure_voltage(0.000001,1000)
-print(point)
-plt.plot(point)
-#instrument.stop()
-
+status=instrument.scpi_query("STAT:OPER:COND?")
+print(bin(int(status[1:]))[2:][-1])

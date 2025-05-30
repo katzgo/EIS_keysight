@@ -58,7 +58,7 @@ class RP7972A():
         # Set output priority mode to current
         ms['priority_mode'] = "FUNC CURR, (@1)"
         # Set voltage limit (necessary for output priority mode)
-        ms['voltage_limit'] = "VOLT:LIM " + str(self.voltage_limit) + "(@1)"
+        ms['voltage_limit'] = "VOLT:LIM " + str(self.voltage_limit) + ", (@1)"
         # Cancel any transients or arbs
         ms['abort_transient_1'] = "ABOR:TRAN (@1)"
         # Set arbitrary function type to current
@@ -88,7 +88,7 @@ class RP7972A():
         ms["trig_tran"] = "TRIG:TRAN (@1)"
         for message in ms:
             if message != "current_points":
-                self.scpi_out = ms[message]
+                self.scpi_out(ms[message])
             else:
                 self.scpi_points_out(ms[message])
     #TOOLBOX    
@@ -156,8 +156,8 @@ class RP7972A():
 #DUT = input("Input the DUT's characteristics: Resistive Load(R), Battery(B)")
 DUT = "R"
 if DUT == "R":
-    r = 33 #Enter load's resistance in Ohms
-    power_capacity = 2 #Enter load's power capacity in Watts
+    r = 20 #Enter load's resistance in Ohms
+    power_capacity = 8 #Enter load's power capacity in Watts
     amplitude = np.sqrt(power_capacity/r)/2
     voltage_limit = r*amplitude*2 + 1
 else:

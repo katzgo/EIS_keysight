@@ -1,5 +1,6 @@
 import numpy as np
 import pyvisa
+import time
 
 class RP7972A():
     """Esta clase pide y mide los datos de la fuente, para luego ser procesados"""
@@ -48,10 +49,10 @@ class RP7972A():
         # Set arbitrary function shape to CDW
         ms['arb_func_shape'] = "ARB:FUNC:SHAP CDW,(@1)"
         # Set the arb to repeat an infinite amount of times
-        arb_cycles = "INF"
+        arb_cycles = "50"
         ms['arb_count'] = "ARB:COUN " + str(arb_cycles) + ", (@1)"
         # Set the last current setting when the arb ends to 1A
-        ms['arb_term_last'] = "ARB:TERM:LAST 1,(@1)"
+        ms['arb_term_last'] = "ARB:TERM:LAST 0,(@1)"
         # Set the mode of the current to be an Arbitrary signal
         ms['curr_mode'] = "CURR:MODE ARB,(@1)"
         # Set the source of the arbitrary trigger to Bus
@@ -76,22 +77,22 @@ class RP7972A():
     #TOOLBOX    
     def cycles_per_frequency(self, freq):
         """Switch para definir ciclos por frecuencia, recibe una frequencia saca cantidad de ciclos"""
-        if freq <= 2000:
+        if 1000 < freq <= 2000:
             cycles = 4
             points_per_cycle = 50
-        elif 100 <= freq < 1000:
+        elif 100 < freq <= 1000:
             cycles = 2
             points_per_cycle = 100
-        elif 10 <= freq <= 100:
+        elif 10 < freq <= 100:
             cycles = 2
             points_per_cycle = 100
-        elif 1 <= freq <= 10:
+        elif 1 < freq <= 10:
             cycles = 2
             points_per_cycle = 100
-        elif 100/1000 <= freq <= 1:
+        elif 100/1000 < freq <= 1:
             cycles = 2
             points_per_cycle = 100
-        elif 10/1000 <= freq <= 100/1000:
+        elif 10/1000 < freq <= 100/1000:
             cycles = 1
             points_per_cycle = 1000
         elif 1/1000 <= freq <= 10/1000:
@@ -119,6 +120,12 @@ class RP7972A():
             self.rp_USB.write_ascii_values('ARB:CURR:CDW ', values, "f",",","\n")
         except:
             print("could not send ascii values")
+    def scpi_query(self, query):
+        try:
+            response=self.rp_USB.query(str(query))
+            return response
+        except:
+            print("could not send query: " + str(query))
     def stop(self):
         try:
             self.rp_USB.write("ABORt:TRANsient","\n")
@@ -147,19 +154,35 @@ else:
 #SIGNAL DEFINITION
 # Edit the following values of the current signal you wish to generate
 frequency = 1000
-
+freqs=[10,20,30,40,50,60,70,80,90,100]
 
 # =======================================================================================================
 #CLASS CALLING
 # Calling the class of the instrument
 inst = RP7972A(amplitude, voltage_limit)
+for i in freqs:
+    inst.generate_arb(i)
+    status_curr = True
+    print("Generating current of frequency " + str(i))
+    while(status_curr):
+        time.sleep(0.001)
+        status=inst.scpi_query("STAT:OPER:COND?")
+        #print(status)
+        if int(status[1:]) >= 64:
+            status_curr = bin(int(status[1:]))[2:][-7]
+        else:
+            status_curr = 0
+        print(status_curr)
 
-inst.generate_arb(frequency)
 
 # =======================================================================================================
 #STOP GENERATING
-input("Enter to stop generating the signal")
-inst.stop()
+#input("Enter to stop generating the signal")
+#inst.stop()
 
 
 # Measurements should be made with an Oscilloscope for Testing
+# TODO: Alinear los triggers del measure y de la generación
+# TODO: Cambiar el trigger source para el measure
+# TODO: Usar la función de status, STATUS CHECK
+# TODO: Status check de que ya terminó la señal
